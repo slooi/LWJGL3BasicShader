@@ -11,6 +11,6 @@ public class StaticProgram extends ShaderProgram {
 
     @Override
     void bindAttributeLocations() {
-        super.bindAttributeLocation(0,"position");
+        super.bindAttributeLocation(0,"in_Position");
     }
 }

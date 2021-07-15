@@ -9,7 +9,6 @@ public class Model {
         this.vertexCount = vertexCount;
     }
 
-
     // GETTERS
     public int getVao() {
         return vao;

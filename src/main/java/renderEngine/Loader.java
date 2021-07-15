@@ -26,10 +26,10 @@ public class Loader {
         GL30.glBindBuffer(GL30.GL_ARRAY_BUFFER,vbo);
         GL30.glBufferData(GL30.GL_ARRAY_BUFFER,data,GL30.GL_STATIC_DRAW);
         GL30.glVertexAttribPointer(0,3,GL30.GL_FLOAT,false,0,0);//!@#!@#!@# GL_FLOAT could be wrong
-        GL30.glBindBuffer(GL30.GL_ARRAY_BUFFER,0);
         vbos.add(vbo);
 
         // Clean up
+        GL30.glBindBuffer(GL30.GL_ARRAY_BUFFER,0);
         GL30.glBindVertexArray(0);
 
         // Model

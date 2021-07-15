@@ -1,9 +1,12 @@
 package renderEngine;
 
 public class StaticProgram extends ShaderProgram {
+    private static final String vsFile = "staticVS.txt";
+    private static final String fsFile = "staticFS.txt";
+
 
     public StaticProgram() {
-        super("src/main/java/shaders/staticVS.txt", "src/main/java/shaders/staticFS.txt");
+        super(vsFile, fsFile);
     }
 
     @Override

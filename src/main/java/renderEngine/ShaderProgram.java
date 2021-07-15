@@ -57,7 +57,7 @@ public abstract class ShaderProgram {
     private int buildShader(String shaderFile, int shaderType){
         // Create shader
         int shader = GL30.glCreateShader(shaderType);
-        GL30.glShaderSource(shader,getShaderSource(shaderFile));
+        GL30.glShaderSource(shader,getShaderSource("src/main/java/shaders/"+shaderFile));
         GL30.glCompileShader(shader);
 
         // Check
